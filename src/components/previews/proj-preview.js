@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-class Pro extends Component {
+class Project extends Component {
   render () {
     let {project} = this.props
-    debugger
     return(
       <div key= {this.props.index}>
          <p> {project.name} </p>
@@ -13,4 +12,4 @@ class Pro extends Component {
   }
 }
 
-export default Pro;
+export default Project;
