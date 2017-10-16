@@ -4,7 +4,7 @@ class Header extends Component {
   render () {
     let {user} = this.props
     return(
-        <a href={user.resume}>About</a>
+        <a href={user.resume}>Resume</a>
     )
   }
 }

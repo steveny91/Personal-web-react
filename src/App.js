@@ -5,7 +5,7 @@ import user from "./user.json"
 import Project from "./components/previews/proj-preview.js"
 import Header from "./components/Header"
 import ExternalLinks from "./components/Footer"
-
+import About from "./components/About"
 
 class App extends Component {
   render() {
@@ -14,6 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header user={me}/>
+        <About user={me}/>
         {proj.map(function(project, index){
           return(
             <Project project = {project} index={index}/>
