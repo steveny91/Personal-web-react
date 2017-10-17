@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import user from "../user.json"
 // import Fire from "../../public/Fire.JPG"
 
 class About extends Component {
   render () {
-    let {user} = this.props
+    const me = user.user
     return(
       <div>
         <img src="./Fire.JPG" height="500" width="300"/>

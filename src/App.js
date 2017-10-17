@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import project from "./project.json";
-import user from "./user.json"
-import Project from "./components/previews/proj-preview.js"
 import Header from "./components/Header"
 import ExternalLinks from "./components/Footer"
-import About from "./components/About"
+import user from "./user.json"
+import Main from "./components/Main"
 
 class App extends Component {
   render() {
     const me = user.user
-    const proj = project.projects
     return (
       <div className="App">
         <Header user={me}/>
-        <About user={me}/>
-        {proj.map(function(project, index){
-          return(
-            <Project project = {project} index={index}/>
-           )
-        })}
+        <Main/>
         <ExternalLinks user={me}/>
       </div>
     );
