@@ -4,7 +4,11 @@ class Header extends Component {
   render () {
     let {user} = this.props
     return(
-        <a href={user.resume}>About</a>
+      <div>
+        <a href={user.resume}>Resume</a>
+        <br/>
+        <a href='/about'>Bio</a>
+      </div>
     )
   }
 }

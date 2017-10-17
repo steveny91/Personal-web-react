@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 class Project extends Component {
   render () {
-    let {project} = this.props
+    let {project, index} = this.props
     return(
-      <div key= {this.props.index}>
+      <div key={index}>
          <p> {project.name} </p>
          <img src={project.image}/>
+         <a href={"/projects/"+project.id}>More details</a>
       </div>
     )
   }
