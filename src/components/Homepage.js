@@ -9,7 +9,7 @@ class Homepage extends Component {
       <div>
       {proj.map(function(project, index){
         return(
-          <Project project = {project} index={index}/>
+          <Project project={project} index={index}/>
          )
       })}
       </div>
