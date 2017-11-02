@@ -1,0 +1,30 @@
+nav {
+  height: 54px;
+  background-color: white;
+  line-height: 54px;
+  box-shadow: none;
+}
+
+.logo{
+  height: 54px
+}
+
+.btn-large{
+  background-color: transparent;
+  color: black;
+  box-shadow: none;
+}
+
+html{
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #000046, #1cb5e0); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #000046, #1cb5e0);
+}
+
+html, body, .block {
+  height: 100%;
+}
+
+.btn-large :hover {
+   background-color: white;
+}

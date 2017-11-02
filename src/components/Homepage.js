@@ -6,10 +6,10 @@ class Homepage extends Component {
   render() {
     const proj = project.projects
     return (
-      <div>
+      <div class="tabs-wrapper">
       {proj.map(function(project, index){
         return(
-          <Project project={project} index={index}/>
+          <Project project={project} index={index} key={index}/>
          )
       })}
       </div>

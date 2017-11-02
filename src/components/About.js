@@ -8,7 +8,7 @@ class About extends Component {
     return(
       <div>
         <img src="./Fire.JPG" height="500" width="300"/>
-        <p>{user.bio}</p>
+        <p>{me.bio}</p>
       </div>
     )
   }
